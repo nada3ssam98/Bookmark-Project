@@ -1,0 +1,82 @@
+input:focus{
+   border-color: #BB4120 !important;
+   box-shadow: 0 0 0 0.25rem #fec26055 !important;
+
+}
+* ,
+*::after ,
+*::before
+{
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+a {
+    display: inline-block;
+ }
+
+body{
+    background-color: #F7ECDE;
+    font-family: "PT Sans Caption", sans-serif;
+}
+.bookmark {
+    border-top: 2px dotted black;
+    border-bottom: 2px dotted black;
+}
+h4{
+    font-family: "Righteous", cursive;
+    background: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+h1{
+    font-family: "Pacifico", cursive;
+    font-size: 50px;
+    position: relative;
+}
+.head-font{
+    display: flex;
+    justify-content: center;
+}
+h1:hover::before {
+    height: 50%;
+}
+
+h1::before{
+    position: absolute;
+    content: "";
+    bottom: 6px;
+    left: 0;
+    width:100%;
+    height: 25%;
+    background-color: #fec260;
+    z-index: -1;
+    text-align: center;
+    transition: height 300ms;
+
+}
+button.addBtn{
+    background-color: #BB4120;
+    border: none;
+}
+button.addBtn:hover{
+    background-color: #913d26;
+    
+}
+/* ====================== Start Media Query ======================*/
+@media screen and (min-width: 576px) {
+   
+ }
+ @media screen and (min-width: 768px) {
+ }
+ @media screen and (min-width: 992px) {
+   
+ }
+ @media screen and (min-width: 1200px) {
+    
+ }
+ @media screen and (min-width: 1400px) {
+  
+ }
+ /* ====================== End Media Query ======================*/
