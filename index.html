@@ -24,20 +24,28 @@
             <i class="fa-solid fa-bookmark"></i>
         </h4>
     </div>
+
+
     <div class="mb-lg-4">
         <label for="siteName" class="d-flex align-items-center my-2">
             <i class="fa-solid fa-book-bookmark fa-lg"></i>
             <span class="ps-2 fw-semibold">Site Name</span>
         </label>
-        <input type="text" id="siteName" class="form-control" placeholder="Bookmark Name">
+        <input type="text" oninput="validationName()" id="siteName" class="form-control" placeholder="Bookmark Name">
+        <div class="alert alert-danger d-none" id="alertNameMessage">Site Name must contain at least 3 characters</div>
     </div>
+
+
     <div class="my-lg-4">
         <label for="siteUrl" class="d-flex align-items-center my-2">
             <i class="fa-solid fa-link fa-lg"></i>       
             <span class="ps-2  fw-semibold">Site URL</span>
         </label>
-        <input type="text" id="siteUrl" class="form-control" placeholder="Website URL">
+        <input type="text" oninput="validationUrl()" id="siteUrl" class="form-control" placeholder="Website URL">
+        <div class="alert alert-danger d-none" id="alertUrlMessage">Site URL must be a valid one</div>
     </div>
+
+
     <button class="addBtn btn btn-danger px-5 my-4" onclick="addBookmark()">Submit</button>
     </div>
     <div class="w-75 mx-auto text-center py-4">
